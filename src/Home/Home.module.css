@@ -1,0 +1,107 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    padding: 110px 0 110px 0;
+    color: white;
+}
+
+.imgBackground {
+    width: 100%;
+    height: 100%;
+}
+
+.bgImg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 45%;
+    user-select: none;
+}
+
+.homeContent {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
+
+.heading {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.subHeading {
+    font-family: 'Arvo', serif;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.button {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    position: relative;
+    width: 130px;
+    height: 40px;
+}
+
+.buttonDiv {
+    background: rgb(245, 130, 31);
+    background: linear-gradient(90deg, rgba(245, 130, 31, 1) 0%, rgba(250, 47, 35, 1) 100%);
+    font-weight: 600;
+    z-index: 11;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.maskButton {
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: calc(100% + 16px);
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    z-index: 0;
+    padding: 0;
+    border: 2px solid red;
+}
+
+.button:hover .maskButton {
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+    .heading {
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+    }
+    .subHeading {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        margin: 30px 0;
+    }
+    .button {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        width: 100px;
+        height: 30px;
+    }
+    .maskButton {
+        height: calc(100% + 12px);
+        top: -6px;
+        left: 6px;
+    }
+}
