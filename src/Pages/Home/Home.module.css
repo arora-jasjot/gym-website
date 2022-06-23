@@ -1,10 +1,15 @@
 .home {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: black;
     position: relative;
-    padding: 110px 0 110px 0;
     color: white;
+}
+
+@media not all and (hover:hover) {
+    .home {
+        height: var(--app-height);
+    }
 }
 
 .imgBackground {

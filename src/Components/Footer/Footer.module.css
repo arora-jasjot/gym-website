@@ -1,0 +1,57 @@
+.footer {
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    border-top: 2px solid var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0 10% 0 10%;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.socialHandle span {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.noBorder {
+    border: none !important;
+}
+
+@media screen and (max-width: 800px) {
+    .socialHandle span {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .socialHandle {
+        min-width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .socialHandle span {
+        margin-left: 7px;
+        font-size: 14px;
+    }
+    .footer {
+        padding: 0;
+    }
+    .icon {
+        font-size: 18px;
+    }
+}

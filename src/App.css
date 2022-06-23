@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Big+Shoulders+Stencil+Display:wght@900&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Arvo:wght@700&family=Big+Shoulders+Stencil+Display:wght@900&family=Roboto+Mono&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 :root {
     --primary-color: #F67035;
+    --app-height: 100%;
 }
 
 .text-primary-color {
@@ -19,6 +21,10 @@
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 .align-center {
@@ -43,4 +49,9 @@
 
 .overflow-y-hidden {
     overflow-y: hidden;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
 }
