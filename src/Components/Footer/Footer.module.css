@@ -1,9 +1,8 @@
 .footer {
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 50px;
     border-top: 2px solid var(--primary-color);
-    position: absolute;
     bottom: 0;
     right: 0;
     z-index: 999;
@@ -13,12 +12,12 @@
 }
 
 .socialHandle span {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 15px;
 }
 
 .icon {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .noBorder {
@@ -28,10 +27,10 @@
 @media screen and (max-width: 800px) {
     .socialHandle span {
         margin-left: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .icon {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -46,12 +45,12 @@
 @media screen and (max-width: 400px) {
     .socialHandle span {
         margin-left: 7px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .footer {
         padding: 0;
     }
     .icon {
-        font-size: 18px;
+        font-size: 16px;
     }
 }

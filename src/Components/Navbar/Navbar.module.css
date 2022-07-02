@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    height: 70px;
+    height: 50px;
     border-bottom: 2px solid var(--primary-color);
     position: fixed;
     top: 0;
@@ -18,7 +18,7 @@
 
 .navsList div {
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: all 0.4s ease;
 }
@@ -63,13 +63,13 @@
 @media screen and (max-width: 500px) {
     .navsList div {
         margin: 0 7px;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .navsList div {
         margin: 0 4px;
-        font-size: 13.5px;
+        font-size: 12.5px;
     }
 }

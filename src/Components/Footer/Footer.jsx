@@ -7,8 +7,9 @@ import { MdMail } from 'react-icons/md';
 export default class Footer extends Component {
     render() {
         const currentPage = this.props.currentPage;
+        const bgColor = this.props.bgColor;
         return (
-            <div className={`flex flex-wrap align-center ${styles.footer} ${currentPage === 'Home' ? styles.noBorder : ''}`}>
+            <div className={`flex flex-wrap align-center ${styles.footer} ${currentPage === 'Home' ? `absolute ${styles.noBorder}` : ''} ${bgColor === 'dark' ? 'navbar-bg-color' : ''}`}>
                 <div className={`${styles.socialHandle}`}>
                     <a className='flex jsutify-center align-center' href="/"><FaFacebookF className={styles.icon} /> <span>Facebook</span></a>
                 </div>
