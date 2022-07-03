@@ -1,7 +1,7 @@
 .footer {
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-top: 2px solid var(--primary-color);
     bottom: 0;
     right: 0;
