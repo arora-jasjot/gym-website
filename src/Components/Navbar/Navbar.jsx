@@ -17,7 +17,7 @@ export default class Navbar extends Component {
                 <div className={`flex align-center ${styles.navsList}`}>
                     <Link to='/'><div className={currentPage === 'Home' ? 'text-primary-color' : ""}>Home</div></Link>
                     <Link to='/about'><div className={currentPage === 'About' ? 'text-primary-color' : ""}>About</div></Link>
-                    <Link to='/'><div className={currentPage === 'Gallery' ? 'text-primary-color' : ""}>Gallery</div></Link>
+                    <Link to='/gallery'><div className={currentPage === 'Gallery' ? 'text-primary-color' : ""}>Gallery</div></Link>
                     <Link to='/'><div className={currentPage === 'Shop' ? 'text-primary-color' : ""}>Shop</div></Link>
                     <Link to='/'><div className={currentPage === 'Join' ? 'text-primary-color' : ""}>Join</div></Link>
                     <Link to='/'><div className={currentPage === 'Cart' ? 'text-primary-color' : ""}><FaShoppingCart /></div></Link>

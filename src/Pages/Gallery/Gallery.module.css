@@ -1,0 +1,145 @@
+.gallery {
+    width: 100%;
+    margin-top: 50px;
+    min-height: calc(100vh - 100px);
+}
+
+.images {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px dashed black;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    height: calc(100% - 120px);
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px 0 80px;
+}
+
+.bgBox {
+    height: calc(100%);
+    width: 200px;
+}
+
+.bgColor1 {
+    height: 70%;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.bgColor2 {
+    height: 30%;
+    width: 100%;
+    background-color: transparent
+}
+
+@media screen and (max-width: 1010px) {
+    .thumbnail {
+        width: 170px;
+        height: 170px;
+    }
+    .bgBox {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 884px) {
+    .thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+    .bgBox {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .thumbnail {
+        width: 160px;
+        height: 160px;
+    }
+    .bgBox {
+        width: 170px;
+    }
+    .background {
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .images {
+        justify-content: center;
+    }
+    .thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+    .bgBox {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .thumbnail {
+        width: 150px;
+        height: 150px;
+    }
+    .bgBox {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .thumbnail {
+        width: 100%;
+        aspect-ratio: 1;
+        height: auto;
+    }
+    .background {
+        justify-content: center;
+    }
+    .bgBox {
+        width: 75%;
+    }
+    .bgBox:nth-of-type(2) {
+        display: none;
+    }
+    .bgColor1 {
+        height: 100%;
+    }
+    .bgColor2 {
+        height: 0;
+    }
+}
+
+.pagination {
+    width: 80%;
+    max-width: 500px;
+    height: 30px;
+    background-color: aqua;
+    margin: 50px auto;
+    margin-top: -40px;
+}
