@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import { Lightbox } from "react-modal-image";
+
 import styles from './Gallery.module.css';
+
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import bgImg from '../../Media/gallery-bg.png'
@@ -77,6 +80,9 @@ export default function Gallery() {
     const [pages, setPages] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
     const [imagesArr, setImagesArr] = useState(images.slice(0, 12));
+    const [isOpen, setIsOpen] = useState(false);
+    const [currentImage, setCurrentImage] = useState(null);
+
     let imagesNumber = images.length;
     if (pages === 0) {
         if (imagesNumber > 12) {
@@ -93,7 +99,7 @@ export default function Gallery() {
                     <img src={bgImg} alt="" />
                     <div>GALLERY</div>
                 </div>
-                <div className={`content-section ${styles.modified}`}>
+                <div id='gallery' className={`content-section ${styles.modified}`}>
                     <div className={styles.background}>
                         <div className={styles.bgBox}>
                             <div className={styles.bgColor1}></div>
@@ -105,7 +111,7 @@ export default function Gallery() {
                         </div>
                     </div>
                     <div className={styles.images}>
-                        {imagesArr.map((image, index) => <div key={index} className={styles.thumbnail}> <img src={image.url} alt={image.title} /> </div>)}
+                        {imagesArr.map((image, index) => <div key={index} className={styles.thumbnail} onClick={() => { setCurrentImage(image); setIsOpen(true); }}> <img src={image.url} alt={image.title} /> </div>)}
                     </div>
                     <div className={styles.pagination}>
                         <div className={styles.paginationInnerDiv}>
@@ -113,12 +119,24 @@ export default function Gallery() {
                                 <div onClick={() => {
                                     setCurrentPage(k + 1);
                                     setImagesArr(images.slice((12 * (k)), (12 * (k + 1))));
+                                    window.scrollTo({
+                                        top: document.querySelector("#gallery").scrollTop,
+                                        behavior: 'smooth',
+                                    });
                                 }} key={k} className={`${styles.pageNumber} ${currentPage === k + 1 ? styles.currentPage : ''}`}>{k + 1}</div>
                             ))}
                         </div>
                     </div>
                 </div>
             </div>
+            {isOpen && currentImage !== null && <Lightbox
+                medium={currentImage.url}
+                hideZoom
+                hideDownload
+                showRotate
+                alt={currentImage.title}
+                onClose={() => setIsOpen(false)}
+            />}
             <Footer currentPage='About' bgColor='dark' />
         </>
     )
