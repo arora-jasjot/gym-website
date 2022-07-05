@@ -8,6 +8,7 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Gallery from "./Pages/Gallery/Gallery";
+import Shop from "./Pages/Shop/Shop";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="gallery" element={<Gallery />} />
+        <Route path="shop" element={<Shop />} />
       </Routes>
     </div>
   );
