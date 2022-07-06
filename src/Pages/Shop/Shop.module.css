@@ -4,106 +4,17 @@
     min-height: calc(100vh - 100px);
 }
 
-.productCard {
-    width: 200px;
-    border: 2px groove rgb(69, 69, 69);
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-
-.rating {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+.products {
+    width: 100%;
+    height: fit-content;
+    max-height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 0 2px 0;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 }
 
-.rating svg {
-    width: 14px;
-    margin-left: 2px;
-    fill: yellow;
-}
-
-.rating svg path {
-    stroke: black;
-    stroke-width: 40px;
-}
-
-.productImage {
-    width: 100%;
-    height: 115px;
-    border-bottom: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.productImage img {
-    width: 100%;
-}
-
-.productBody {
-    padding: 6px;
-    font-family: 'Roboto', sans-serif;
-    height: 125px;
-    overflow: hidden;
-}
-
-.productLabel {
-    font-size: 11px;
-    background-color: #00AC6E;
-    color: white;
-    width: fit-content;
-    padding: 2px 8px;
-    border-radius: 20px;
-    font-family: 'Aldrich', sans-serif;
-    margin-left: -1px;
-    margin-bottom: 8px;
-}
-
-.productName {
-    font-weight: 900;
-    margin: 5px 0;
-    white-space: nowrap;
-}
-
-.productDescription {
-    color: grey;
-    font-size: 10px;
-}
-
-.productPrice {
-    color: var(--navbar-bg-color);
-    font-weight: 900;
-    font-size: 18px;
-    margin: 7px 0;
-    display: flex;
-    align-items: center;
-}
-
-.productPrice span {
-    margin-left: 15px;
-    font-size: 14px;
-    color: gray;
-    text-decoration: line-through;
-}
-
-.orderNowBtn {
-    background-color: var(--primary-color);
-    height: 35px;
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Aldrich', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
+.products::-webkit-scrollbar {
+    display: none;
 }
