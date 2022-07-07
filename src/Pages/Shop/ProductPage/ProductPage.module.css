@@ -3,3 +3,156 @@
     margin-top: 50px;
     min-height: calc(100vh - 100px);
 }
+
+.productDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSection {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 7px;
+    margin-right: 3.5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Roboto, 'cursive';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.rightSection {
+    width: 100%;
+    flex-shrink: 1;
+    align-self: stretch;
+    border: 1px solid black;
+    padding: 7px;
+    margin-left: 3.5px;
+}
+
+.productLabel {
+    font-size: 11px;
+    background-color: #00AC6E;
+    color: white;
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-family: 'Aldrich', sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.image {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.image img {
+    height: 100%;
+}
+
+.category,
+.age,
+.rating,
+.buttonDiv {
+    margin-top: 7px;
+    border-bottom: 1.5px solid gray;
+    padding-bottom: 7px;
+}
+
+.rating svg {
+    width: 20px;
+    margin-left: 2px;
+    fill: yellow;
+}
+
+.rating svg path {
+    stroke: black;
+    stroke-width: 40px;
+}
+
+.productPrice {
+    color: var(--navbar-bg-color);
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productPrice span {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.buttonDiv {
+    padding-bottom: 0;
+}
+
+.buttonDiv button {
+    width: 100%;
+    background-color: #288BFF;
+    color: white;
+    border: none;
+    padding: 7px 0 7px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Roboto, 'cursive';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttonDiv button:hover {
+    background-color: #2582ed;
+}
+
+.name {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1.5px solid gray;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.05rem;
+    font-family: Roboto, 'cursive';
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid gray;
+}
+
+.features {
+    font-family: Roboto, 'cursive';
+}
+
+.features .subheading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.features ul {
+    margin-left: 30px;
+}
+
+.features ul li {
+    margin: 10px auto;
+}
