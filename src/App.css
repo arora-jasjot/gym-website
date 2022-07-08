@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Arvo:wght@700&family=Roboto&family=Big+Shoulders+Stencil+Display:wght@900&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Alegreya&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +72,16 @@
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 a {
