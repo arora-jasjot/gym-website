@@ -45,16 +45,19 @@ export default function ProductPage() {
                                 <div className={styles.image}>
                                     <img src={product.img} alt={product.title} />
                                 </div>
-                                <div className={styles.category}>{product.category}</div>
-                                <div className={styles.age}>{product.age}</div>
-                                {fullRate > 0 && <div className={styles.rating}>
-                                    {fullRate !== null && Array.from({ length: fullRate }).map((e, i) => <FaStar key={i} />)}
-                                    {halfRate !== 0 && <FaStarHalf />}
-                                </div>}
-                                <div className={styles.productPrice}>
-                                    ₹ {Number(amt - discount)} <span>₹ {amt}</span>
+                                <div className={styles.leftInner}>
+                                    <div className={styles.leftName}>{product.title}</div>
+                                    <div className={styles.category}>{product.category}</div>
+                                    <div className={styles.age}>{product.age}</div>
+                                    {fullRate > 0 && <div className={styles.rating}>
+                                        {fullRate !== null && Array.from({ length: fullRate }).map((e, i) => <FaStar key={i} />)}
+                                        {halfRate !== 0 && <FaStarHalf />}
+                                    </div>}
+                                    <div className={styles.productPrice}>
+                                        ₹ {Number(amt - discount)} <span>₹ {amt}</span>
+                                    </div>
+                                    <div className={styles.buttonDiv}><button>Add to cart</button></div>
                                 </div>
-                                <div className={styles.buttonDiv}><button>Add to cart</button></div>
                             </div>
                             <div className={styles.rightSection}>
                                 <div className={styles.name}>{product.title}</div>

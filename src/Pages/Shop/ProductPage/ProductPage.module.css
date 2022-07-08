@@ -68,10 +68,16 @@
 .category,
 .age,
 .rating,
-.buttonDiv {
+.buttonDiv,
+.leftName,
+.productPrice {
     margin-top: 7px;
     border-bottom: 1.5px solid gray;
     padding-bottom: 7px;
+}
+
+.leftName {
+    display: none;
 }
 
 .rating svg {
@@ -87,7 +93,6 @@
 
 .productPrice {
     color: var(--navbar-bg-color);
-    margin: 7px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,4 +160,54 @@
 
 .features ul li {
     margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .leftName {
+        display: block;
+    }
+    .name {
+        display: none;
+    }
+    .productDiv {
+        flex-wrap: wrap;
+    }
+    .leftSection {
+        width: 100%;
+        flex-direction: row;
+        margin: 0;
+        border-bottom: 0;
+        flex-wrap: wrap;
+    }
+    .rightSection {
+        flex-shrink: 0;
+        margin: 0;
+    }
+    .image {
+        width: 40%;
+        min-width: 180px;
+    }
+    .leftInner {
+        width: 60%;
+        border-left: 1.5px solid gray;
+        padding-left: 7px;
+    }
+    .description {
+        margin: 7px 0;
+    }
+}
+
+@media only screen and (max-width: 491px) {
+    .productDiv {
+        width: 95%;
+        max-width: 400px;
+        margin: auto;
+    }
+    .leftSection {
+        font-size: 1rem;
+    }
+    .leftInner {
+        border: 0;
+        width: 100%;
+    }
 }
