@@ -1,0 +1,109 @@
+.CartItem {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 15px 0;
+    background-color: #FFFAFA;
+}
+
+.CartItem:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.image {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.image img {
+    height: 100%;
+}
+
+.ProductDescription {
+    height: 120px;
+    width: 100%;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ProductDescription h1 {
+    font-family: Aldrich;
+    font-size: 1.4rem;
+}
+
+.ProductDescription p {
+    font-size: 12px;
+    color: gray;
+    font-family: Roboto, 'cursive';
+    margin: 6px 0;
+}
+
+.ProductDescription div svg path {
+    stroke: black;
+    stroke-width: 50px;
+    fill: yellow;
+}
+
+.ProductDescription div svg {
+    margin: 5px 2px;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.quantity svg {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.quantity div:nth-of-type(1) path {
+    fill: red;
+}
+
+.quantity div:nth-of-type(3) path {
+    fill: green;
+}
+
+.quantity .number {
+    margin: 0 10px;
+    font-family: Roboto, 'cursive';
+}
+
+.price {
+    font-family: Roboto, 'cursive';
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.deleteBtn {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.leftInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -23,7 +23,7 @@ export default class Navbar extends Component {
                     <Link to='/gallery' onClick={() => scrollTop()}><div className={currentPage === 'Gallery' ? 'text-primary-color' : ""}>Gallery</div></Link>
                     <Link to='/shop' onClick={() => scrollTop()}><div className={currentPage === 'Shop' ? 'text-primary-color' : ""}>Shop</div></Link>
                     <Link to='/join' onClick={() => scrollTop()}><div className={currentPage === 'Join' ? 'text-primary-color' : ""}>Join</div></Link>
-                    <Link to='/' onClick={() => scrollTop()}><div className={currentPage === 'Cart' ? 'text-primary-color' : ""}><FaShoppingCart /></div></Link>
+                    <Link to='/cart' onClick={() => scrollTop()}><div className={currentPage === 'Cart' ? 'text-primary-color' : ""}><FaShoppingCart /></div></Link>
                     <Link to='/' onClick={() => scrollTop()}><div className={currentPage === 'Account' ? 'text-primary-color' : ""}><FaUserAlt /></div></Link>
                 </div>
                 <div className={`${styles.menuButton}`}><GiHamburgerMenu /></div>

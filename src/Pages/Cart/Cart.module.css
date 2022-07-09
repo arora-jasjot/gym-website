@@ -1,0 +1,28 @@
+.cart {
+    width: 100%;
+    margin-top: 50px;
+    min-height: calc(100vh - 100px);
+}
+
+.cartDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.leftSection {
+    width: 100%;
+    min-height: 300px;
+    flex-shrink: 1;
+    margin-right: 7px;
+}
+
+.rightSection {
+    width: 100%;
+    max-width: 350px;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 7px;
+}

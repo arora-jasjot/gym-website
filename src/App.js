@@ -11,6 +11,7 @@ import Gallery from "./Pages/Gallery/Gallery";
 import Shop from "./Pages/Shop/Shop";
 import ProductPage from "./Pages/Shop/ProductPage/ProductPage";
 import Join from "./Pages/Join/Join";
+import Cart from "./Pages/Cart/Cart";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="shop" element={<Shop />} />
         <Route path="product" element={<ProductPage />} />
         <Route path="join" element={<Join />} />
+        <Route path="cart" element={<Cart />} />
       </Routes>
     </div>
   );
