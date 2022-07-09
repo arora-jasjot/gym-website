@@ -16,13 +16,124 @@
     min-height: 300px;
     flex-shrink: 1;
     margin-right: 7px;
+    max-height: 700px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.leftSection::-webkit-scrollbar {
+    width: 4px;
+}
+
+.leftSection::-webkit-scrollbar-track {
+    background-color: #e5e5e5;
 }
 
 .rightSection {
     width: 100%;
     max-width: 350px;
-    min-height: 300px;
+    min-width: 300px;
     border: 2px solid black;
     border-radius: 10px;
     margin-left: 7px;
+    padding: 10px;
+    font-family: Roboto, 'cursive';
+}
+
+.couponDiv,
+.pricingDiv {
+    margin: 10px 0;
+}
+
+.couponDiv {
+    margin-bottom: 60px;
+}
+
+.couponDiv input {
+    outline: 0;
+    margin: 10px auto;
+    margin-top: 0;
+    background-color: #FFFAFA;
+    border-radius: 0;
+}
+
+.submit {
+    background-color: #00AC6E;
+    color: white;
+    width: fit-content;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+
+.total {
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+    margin: 10px auto;
+}
+
+.checkout {
+    margin-left: auto;
+    width: fit-content;
+    background-color: #288BFF;
+    color: white;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 946px) {
+    .rightSection {
+        max-width: 270px;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .cartDiv {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .leftSection {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .rightSection {
+        width: 100%;
+        max-width: 100%;
+        float: left;
+        margin: auto;
+        margin-bottom: 40px;
+        min-height: fit-content;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pricingDiv {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .pricingDiv {
+        min-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .rightSection {
+        flex-direction: column;
+        width: 80%;
+        min-width: 300px;
+    }
 }

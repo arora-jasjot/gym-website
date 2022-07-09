@@ -20,8 +20,52 @@ export default function Cart() {
                             <CartItem />
                             <CartItem />
                             <CartItem />
+                            <CartItem />
+                            <CartItem />
+                            <CartItem />
+                            <CartItem />
+                            <CartItem />
+                            <CartItem />
                         </div>
-                        <div className={styles.rightSection}></div>
+                        <div className={styles.rightSection}>
+                            <div className={styles.couponDiv}>
+                                <div className={styles.label}>Apply Coupon</div>
+                                <input type="text" />
+                                <div className={styles.submit}>Submit</div>
+                            </div>
+                            <div className={styles.pricingDiv}>
+                                <div className={styles.label}>Price Details</div>
+                                <div className={styles.field}>
+                                    <div>Amount</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={styles.field}>
+                                    <div>Discount</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={styles.field}>
+                                    <div>Shipping Charges</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={styles.field}>
+                                    <div>Taxable Amount</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={styles.field}>
+                                    <div>SGST</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={styles.field}>
+                                    <div>CGST</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={`${styles.total} ${styles.field}`}>
+                                    <div>Total</div>
+                                    <div>₹ 1200/-</div>
+                                </div>
+                                <div className={styles.checkout}>Checkout</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

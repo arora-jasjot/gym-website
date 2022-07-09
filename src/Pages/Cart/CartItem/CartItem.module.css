@@ -43,6 +43,7 @@
 .ProductDescription h1 {
     font-family: Aldrich;
     font-size: 1.4rem;
+    white-space: nowrap;
 }
 
 .ProductDescription p {
@@ -106,4 +107,82 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 946px) {
+    .image {
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+    }
+    .ProductDescription {
+        height: 100px;
+    }
+    .ProductDescription h1 {
+        font-size: 1.2rem;
+    }
+    .ProductDescription p {
+        font-size: 11px;
+    }
+    .leftInner {
+        margin-left: 5px;
+    }
+    .quantity {
+        margin: 0;
+    }
+    .quantity .number {
+        margin: 0 4px;
+    }
+    .price {
+        margin: 0 10px;
+    }
+    .deleteBtn {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .CartItem {
+        margin: 5px auto;
+        border-width: 1.5px;
+    }
+    .price {
+        margin: 0 20px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .price {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .image {
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+    }
+    .ProductDescription {
+        height: 80px;
+    }
+    .ProductDescription h1 {
+        font-size: 1rem;
+    }
+    .ProductDescription p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .CartItem {
+        padding: 5px;
+    }
+    .leftInner {
+        flex-direction: column;
+    }
+    .price {
+        margin: 10px 0;
+    }
 }
