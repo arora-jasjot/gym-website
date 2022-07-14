@@ -1,0 +1,84 @@
+.account {
+    width: 100%;
+    margin-top: 50px;
+    min-height: calc(100vh - 100px);
+}
+
+.accountDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSection {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 7px;
+    margin-right: 3.5px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Roboto, 'cursive';
+    letter-spacing: 1px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rightSection {
+    width: 100%;
+    flex-shrink: 1;
+    align-self: stretch;
+    border: 1px solid black;
+    padding: 12px;
+    margin-left: 3.5px;
+}
+
+.tab {
+    background-color: #F3F3F3;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    letter-spacing: 1.25px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #1D1D1D;
+    color: white;
+}
+
+@media only screen and (max-width: 854px) {
+    .accountDiv {
+        flex-wrap: wrap;
+    }
+    .rightSection {
+        width: 100%;
+        flex-shrink: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .leftSection {
+        width: fit-content;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tab {
+        width: fit-content;
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .tab {
+        font-size: 16px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+}

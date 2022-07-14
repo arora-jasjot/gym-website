@@ -12,6 +12,7 @@ import Shop from "./Pages/Shop/Shop";
 import ProductPage from "./Pages/Shop/ProductPage/ProductPage";
 import Join from "./Pages/Join/Join";
 import Cart from "./Pages/Cart/Cart";
+import Account from "./Pages/Account/Account";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="product" element={<ProductPage />} />
         <Route path="join" element={<Join />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="account" element={<Account />} />
       </Routes>
     </div>
   );
